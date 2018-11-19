@@ -4,4 +4,18 @@ const title = React.createElement(
     'React Title'
 );
 
-console.log(title);
+const description = React.createElement(
+    'p',
+    null,
+    'My First REACT elements'
+);
+
+const header = React.createElement( 
+    'header',
+    null,
+    title, description
+);
+
+ReactDOM.render(
+    header, document.getElementById('root')
+);
