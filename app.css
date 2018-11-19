@@ -1,9 +1,11 @@
 /* ELEMENT STYLES -------------------- */
 
 body {
-  background: #e8e7e7; 
-  font-family: arial;
+  color: rgb(125, 80, 231);
+  background: #f1f1f1; 
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 header {
