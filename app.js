@@ -1,19 +1,12 @@
-const title = React.createElement(
-    'h1', 
-    {id: 'main-title', title: 'Title'},
-    'React Title'
-);
+const title = <h1>Using REACT</h1>;
 
-const description = React.createElement(
-    'p',
-    null,
-    'My First REACT elements'
-);
+const description = <p>First time using REACT</p>;
 
-const header = React.createElement( 
-    'header',
-    null,
-    title, description
+const header = ( 
+    <header>
+        <h1>Using REACT</h1>
+        <p>First time using REACT</p>
+    </header>
 );
 
 ReactDOM.render(
