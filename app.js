@@ -1,11 +1,11 @@
-const title = <h1>Using REACT</h1>;
-
-const description = <p>First time using REACT</p>;
+const title = 'Using REACT';
+const description = 'First time using REACT';
+var titleId = 'main-title'
 
 const header = ( 
     <header>
-        <h1>Using REACT</h1>
-        <p>First time using REACT</p>
+        <h1 id={titleId}>{ title }</h1>
+        <p>{ description }</p>
     </header>
 );
 
