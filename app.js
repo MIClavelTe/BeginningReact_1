@@ -8,22 +8,22 @@ function Header(props) {
     );
 };
 
-function Player() {
+function Player(props) {
     return (
         <div className="player">
             <span className="player-name">
-                Maria
+                { props.player }
             </span>
-            <Counter />
+            <Counter score={props.score}/>
         </div>
     );
 };
 
-function Counter() {
+function Counter(props) {
     return(
         <div className="counter">
             <button className="counter-action decrement"> - </button>
-            <span className="counter-score">150</span>
+            <span className="counter-score">{ props.score }</span>
             <button className="counter-action increment"> + </button>
         </div>
     );
@@ -32,8 +32,11 @@ function Counter() {
 function App() {
     return (
         <div className='scoreboard'>
-            <Header title="Scoreboard" players={5}/>
-            <Player />
+            <Header title="Scoreboard" players={4}/>
+            <Player player="Adriana" score={117}/>
+            <Player player="Maria" score={131}/>
+            <Player player="Helen" score={128}/>
+            <Player player="Jenny" score={92}/>
         </div>
     );
 };
