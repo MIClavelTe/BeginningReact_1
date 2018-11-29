@@ -32,7 +32,7 @@ function Counter() {
 function App() {
     return (
         <div className='scoreboard'>
-            <Header title="Scoreboard" players={1}/>
+            <Header title="Scoreboard" players={5}/>
             <Player />
         </div>
     );
