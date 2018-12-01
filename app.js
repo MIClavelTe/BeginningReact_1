@@ -30,14 +30,16 @@ function Player(props) {
     );
 };
 
-function Counter(props) {
-    return(
-        <div className="counter">
-            <button className="counter-action decrement"> - </button>
-            <span className="counter-score">{ props.score }</span>
-            <button className="counter-action increment"> + </button>
-        </div>
-    );
+class Counter extends React.Component {
+    render() {
+        return(
+            <div className="counter">
+                <button className="counter-action decrement"> - </button>
+                <span className="counter-score">{ props.score }</span>
+                <button className="counter-action increment"> + </button>
+            </div>
+        );
+    }
 };
 
 function App(props) {
